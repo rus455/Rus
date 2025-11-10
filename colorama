@@ -1,0 +1,11 @@
+from colorama import Fore, Back, Style, init
+
+# Инициализация colorama (нужно на Windows)
+init(autoreset=True)
+
+print(Fore.RED + "Красный текст")
+print(Fore.GREEN + "Зелёный текст" + Fore.RESET)
+print(Back.YELLOW + "Жёлтый фон")
+print(Style.BRIGHT + "Яркий текст")
+print(Style.DIM + "Тусклый текст")
+print(Fore.CYAN + Back.MAGENTA + "Цветной текст с фоном!")
